@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <Link to="/" className="logo">
-        <img src="/ilmc.png" alt="logo" />
+        <img src={`${import.meta.env.BASE_URL}ilmc.png`} alt="logo" />
       </Link>
       <ul className={`navlist${open ? ' open' : ''}`}>
         <li>
