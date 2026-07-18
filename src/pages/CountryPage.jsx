@@ -285,7 +285,7 @@ export default function CountryPage() {
       <Header />
       <section className="main-section">
         <img
-          src={`/${country}001.png`}
+          src={`${import.meta.env.BASE_URL}${country}001.png`}
           alt="Country flag decoration"
           className="img-group section-static"
           style={{ display: editing ? 'none' : undefined }}
@@ -354,7 +354,10 @@ export default function CountryPage() {
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
               />
-              <div id="frame" style={{ backgroundImage: "url('/frame0001.png')" }}></div>
+              <div
+                id="frame"
+                style={{ backgroundImage: `url('${import.meta.env.BASE_URL}frame0001.png')` }}
+              ></div>
             </div>
             <div className="upload-buttons">
               <button className="upload-button upload-button2" id="cropBtn" onClick={handleCrop}>

@@ -47,7 +47,7 @@ export default function DonePage() {
 
     const suffixes = ['01', '02', '03']
     suffixes.forEach((suffix, i) => {
-      mergeFrame(croppedImage, `/${country}${suffix}.png`)
+      mergeFrame(croppedImage, `${import.meta.env.BASE_URL}${country}${suffix}.png`)
         .then((dataUrl) => {
           setFrames((prev) => {
             const next = [...prev]

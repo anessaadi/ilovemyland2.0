@@ -53,7 +53,7 @@ export default function Home() {
             </section>
             <section className="image-section">
               <img
-                src="/usaphone002.png"
+                src={`${import.meta.env.BASE_URL}usaphone002.png`}
                 alt="Placeholder"
                 className="placeholder-image"
                 style={{ maxWidth: 400 }}

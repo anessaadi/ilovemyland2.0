@@ -9,8 +9,8 @@
 }
 @font-face {
     font-family: 'CustomFont';
-    src: url('/Sketchy.ttf') format('truetype'), 
-         url('/Sketchy.otf') format('opentype');
+    src: url('../assets/fonts/Sketchy.ttf') format('truetype'),
+         url('../assets/fonts/Sketchy.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
